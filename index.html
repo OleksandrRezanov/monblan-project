@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="content-wrapper header__wrapper">
+        <div class="logo-wrapper">
+          <img src="./images/logo.svg" alt="Monblan Logo" />
+        </div>
+
+        <div>
+          <div class="header__title">
+            <h1 class="header__title-body">monblanproject</h1>
+            <div class="header__title-button">Start on 17-02-2016</div>
+          </div>
+
+          <div class="header__info">
+            <p>
+              <span class="bold">870 </span>posts
+            </p>
+
+            <p>
+              <span class="bold">11,787 </span>followers
+            </p>
+
+            <p>
+              <span class="bold">112 </span>following
+            </p>
+          </div>
+
+          <div class="header__date">
+            <p class="header__date-title">Date</p>
+
+            <div class="header__calendar-wrapper">
+              <input class="header__calendar" type="text" id="date-picker-from" placeholder="from">
+              <div id="date-picker-from-on" class="header__calendar-btn header__calendar-btn--on"></div>
+              <div id="date-picker-from-off" class="header__calendar-btn header__calendar-btn--off"></div>
+            </div>
+
+            <div class="header__calendar-wrapper">
+              <input class="header__calendar" type="text" id="date-picker-to" placeholder="to">
+              <div id="date-picker-to-on" class="header__calendar-btn header__calendar-btn--on"></div>
+              <div id="date-picker-to-off" class="header__calendar-btn header__calendar-btn--off"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="content-wrapper">
+        <div class="main-buttons">
+          <div class="main-button main-button--tiles main-button--active">
+            <div class="main-button-squire main-button-item-active"></div>
+            <div class="main-button-squire main-button-item-active"></div>
+            <div class="main-button-squire main-button-item-active"></div>
+            <div class="main-button-squire main-button-item-active"></div>
+            <div class="main-button-squire main-button-item-active"></div>
+            <div class="main-button-squire main-button-item-active"></div>
+            <div class="main-button-squire main-button-item-active"></div>
+            <div class="main-button-squire main-button-item-active"></div>
+            <div class="main-button-squire main-button-item-active"></div>
+          </div>
+
+          <div class="main-button main-button--rows">
+            <div class="main-button-dot main-button-row-item"></div>
+            <div class="main-button-line main-button-row-item"></div>
+            <div class="main-button-dot main-button-row-item"></div>
+            <div class="main-button-line main-button-row-item"></div>
+            <div class="main-button-dot main-button-row-item"></div>
+            <div class="main-button-line main-button-row-item"></div>
+          </div>
+        </div>
+
+        <section class="main-posts">
+          <article class="main-post">
+            <div class="main-posts-img-wrapper">
+              <img class="main-posts-img" src="./images/main/photo-1.jpg" alt="photo-1">
+            </div>
+
+            <div class="main-post-info">
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">Today</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">128</p>
+                  <p class="main-post-info-value main-post-info-value--chat">31</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">9-08-2016</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">67</p>
+                  <p class="main-post-info-value main-post-info-value--chat">22</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-status">
+                <p class="main-post-info-title status-title">Image upload</p>
+                <p class="main-post-info-value status-value">11-04-2016</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="main-post">
+            <div class="main-posts-img-wrapper">
+              <img class="main-posts-img" src="./images/main/photo-2.jpg" alt="photo-2">
+            </div>
+
+            <div class="main-post-info">
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">Today</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">128</p>
+                  <p class="main-post-info-value main-post-info-value--chat">31</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">9-08-2016</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">67</p>
+                  <p class="main-post-info-value main-post-info-value--chat">22</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-status">
+                <p class="main-post-info-title status-title">Image upload</p>
+                <p class="main-post-info-value status-value">11-04-2016</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="main-post">
+            <div class="main-posts-img-wrapper">
+              <img class="main-posts-img" src="./images/main/photo-3.jpg" alt="photo-3">
+            </div>
+
+            <div class="main-post-info">
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">Today</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">128</p>
+                  <p class="main-post-info-value main-post-info-value--chat">31</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">9-08-2016</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">67</p>
+                  <p class="main-post-info-value main-post-info-value--chat">22</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-status">
+                <p class="main-post-info-title status-title">Image upload</p>
+                <p class="main-post-info-value status-value">11-04-2016</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="main-post">
+            <div class="main-posts-img-wrapper">
+              <img class="main-posts-img" src="./images/main/photo-4.jpg" alt="photo-4">
+            </div>
+
+            <div class="main-post-info">
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">Today</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">128</p>
+                  <p class="main-post-info-value main-post-info-value--chat">31</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">9-08-2016</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">67</p>
+                  <p class="main-post-info-value main-post-info-value--chat">22</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-status">
+                <p class="main-post-info-title status-title">Image upload</p>
+                <p class="main-post-info-value status-value">11-04-2016</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="main-post">
+            <div class="main-posts-img-wrapper">
+              <img class="main-posts-img" src="./images/main/photo-5.jpg" alt="photo-5">
+            </div>
+
+            <div class="main-post-info">
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">Today</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">128</p>
+                  <p class="main-post-info-value main-post-info-value--chat">31</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">9-08-2016</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">67</p>
+                  <p class="main-post-info-value main-post-info-value--chat">22</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-status">
+                <p class="main-post-info-title status-title">Image upload</p>
+                <p class="main-post-info-value status-value">11-04-2016</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="main-post">
+            <div class="main-posts-img-wrapper">
+              <img class="main-posts-img" src="./images/main/photo-6.jpg" alt="photo-6">
+            </div>
+
+            <div class="main-post-info">
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">Today</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">128</p>
+                  <p class="main-post-info-value main-post-info-value--chat">31</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">9-08-2016</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">67</p>
+                  <p class="main-post-info-value main-post-info-value--chat">22</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-status">
+                <p class="main-post-info-title status-title">Image upload</p>
+                <p class="main-post-info-value status-value">11-04-2016</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="main-post">
+            <div class="main-posts-img-wrapper">
+              <img class="main-posts-img" src="./images/main/photo-7.jpg" alt="photo-7">
+            </div>
+
+            <div class="main-post-info">
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">Today</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">128</p>
+                  <p class="main-post-info-value main-post-info-value--chat">31</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">9-08-2016</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">67</p>
+                  <p class="main-post-info-value main-post-info-value--chat">22</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-status">
+                <p class="main-post-info-title status-title">Image upload</p>
+                <p class="main-post-info-value status-value">11-04-2016</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="main-post">
+            <div class="main-posts-img-wrapper">
+              <img class="main-posts-img" src="./images/main/photo-8.jpg" alt="photo-8">
+            </div>
+
+            <div class="main-post-info">
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">Today</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">128</p>
+                  <p class="main-post-info-value main-post-info-value--chat">31</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-body">
+                <p class="main-post-info-title">9-08-2016</p>
+
+                <div class="main-post-info-values">
+                  <p class="main-post-info-value main-post-info-value--heart">67</p>
+                  <p class="main-post-info-value main-post-info-value--chat">22</p>
+                </div>
+              </div>
+
+              <div class="main-post-info-status">
+                <p class="main-post-info-title status-title">Image upload</p>
+                <p class="main-post-info-value status-value">11-04-2016</p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <div class="load-more">LOAD MORE</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
